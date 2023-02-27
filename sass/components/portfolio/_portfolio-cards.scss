@@ -1,0 +1,79 @@
+.portfolio__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 94px;
+  list-style: none;
+  gap: 30px;
+
+  .portfolio__card {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex-basis: calc((100% - 90px) / 3);
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &-link {
+      text-decoration: none;
+    }
+
+    &-info {
+      border: 1px solid #eeeeee;
+      border-top: 0;
+      padding: 20px 24px;
+    }
+
+    &-title {
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 2;
+      color: $secondary;
+      text-decoration: none;
+      margin: 0;
+    }
+
+    &-description {
+      font-size: 16px;
+      line-height: 1.8;
+      color: $background-dark;
+      margin: 0;
+    }
+
+    &-link img {
+      display: block;
+    }
+  }
+}
+
+.image__hover-overlay-wrapper {
+  width: 370px;
+  height: 294px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image__hover-overlay {
+  box-sizing: border-box;
+  width: 370px;
+  height: 294px;
+  position: absolute;
+  background-color: $principal;
+  opacity: 0.9;
+  padding: 63px 24px;
+  bottom: -294px;
+  font-family: "Roboto", "arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $accent;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+  &-wrapper:hover > & {
+    bottom: 0;
+  }
+}

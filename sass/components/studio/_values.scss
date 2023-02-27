@@ -1,0 +1,57 @@
+.values {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 58px 0 0 0;
+    margin: 0;
+  }
+
+  &-icon {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-soft;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    .icon__antenna {
+      width: 70px;
+      height: 70px;
+    }
+
+    .icon__clock {
+      width: 67px;
+      height: 70px;
+    }
+
+    .icon__diagram {
+      width: 70px;
+      height: 54px;
+    }
+
+    .icon__astronaut {
+      width: 55px;
+      height: 60px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $secondary;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    line-height: 1.7;
+    color: $background-dark;
+    margin: 0;
+  }
+}

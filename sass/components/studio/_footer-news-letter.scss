@@ -1,0 +1,74 @@
+.footer__news-letter-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__news-letter-title {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 700;
+  line-height: 1.1;
+  color: $accent;
+  margin: 0;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.footer-form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  position: relative;
+}
+
+.footer__news-letter-input {
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  margin-right: 12px;
+  border: 1px solid #ffffff4d;
+  border-radius: 4px;
+  background-color: $secondary;
+  color: $accent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer__news-letter-input::placeholder {
+  color: #ffffff99;
+}
+
+.footer__news-letter-button {
+  width: 200px;
+  height: 50px;
+  background-color: $principal;
+  color: $accent;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-left: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  position: relative;
+}
+
+.footer__button-icon-wraper {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 28px;
+}
+
+svg.footer__subscribe-icon {
+  width: 24px;
+  height: 24px;
+  fill: $accent;
+}
